@@ -1,7 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## Replaced numeric from function with matrix & vector m with INV
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -15,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set=set, get=get, setinverse=setinverse, getinverse=getinverse)
 }
 
-
+#Replaced mean with inverse & m with inv
 cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
   if(!is.null(inv)) {
